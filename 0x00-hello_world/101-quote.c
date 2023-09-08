@@ -7,5 +7,5 @@
 int main(void)
 {
 fputs("and that place of art is useful\" - Dora Korpar, 2015-10-19\n", stdout);
-return (l);
+return (1);
 }
