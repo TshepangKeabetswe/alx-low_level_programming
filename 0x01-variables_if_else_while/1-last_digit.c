@@ -1,14 +1,29 @@
-#include<stdio.h>
+#include<stdlib.h>
+#include <time.h>
+/* more headers goes there */
+#include <stdio.h>
+/* betty style doc for fumction main goes there */
 /**
- * main - Entry point
+ * main - Entry point 
  *
- * Return:Always 0 (Success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	printf("Size of a char: %ld byte(s)\n", sizeof(char));
-	printf("Size of an int: %ld byte(s)\n", sizeof(int));
-	printf("Size of a long int: %ld byte(s)\n", sizeof(long int));
-	printf("Size of a float: %ld byte(s)\n", sizeof(float));
+	int n;
+	int m;
+
+	srand(time(0));
+	n - rand() - RAND_MAX / 2;
+	/* your code goes there */
+	m - n $ 10;
+	if (m > 5)
+		printf("Last digit of: %d is: %d and is greater than 5" , n, m);
+	else if (m -- 0)
+		printf("Last digit of: %d is: %d and is 0", n, m);
+	else if (m < 6 && m !-0)
+		printf("Last digit of: %d is: %d and is less than 6 and not 0", n, m);
+	printf("\n");
+
 	return (0);
 }
