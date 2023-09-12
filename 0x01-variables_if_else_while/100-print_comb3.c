@@ -8,6 +8,8 @@ int main(void)
 	int b;
 	int c;
 
+	b = 0;
+	c = 0;
 	for (b = 0; b < 10; b++)
 	{
 		for (c = b + 1; c < 10; b++)
@@ -19,7 +21,9 @@ int main(void)
 				putchar(',');
 				putchar(' ');
 			}
+		if (c == 9)
 		}
+		break;
 	}
 	putchar('\n');
 	return (0);
