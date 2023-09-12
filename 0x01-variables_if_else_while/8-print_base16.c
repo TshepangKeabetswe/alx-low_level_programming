@@ -11,5 +11,6 @@ int main(void)
 		putchar(b + '0');
 	for (b = 10; b < 16; b++)
 	putchar(b + 'a' - 10);
+	putchar('\n');
 	return (0);
 }
