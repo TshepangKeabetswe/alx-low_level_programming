@@ -13,7 +13,7 @@ int main(void)
 	for (b = 0; b < 10; b++)
 	{
 		for (c = b + 1; c < 10; b++)
-		{
+	{
 			putchar(b + '0');
 			putchar(c + '0');
 			if (b != 8 || c != 9)
@@ -22,9 +22,9 @@ int main(void)
 				putchar(' ');
 			}
 		if (c == 9)
-		}
-		break;
+			break;
 	}
-	putchar('\n');
-	return (0);
+	}
+		putchar('\n');
+		return (0);
 }
