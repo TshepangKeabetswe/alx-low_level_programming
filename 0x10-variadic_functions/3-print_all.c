@@ -33,6 +33,9 @@ void print_all(const char * const format, ...)
 						str = "(nil)";
 					printf("%s%s", sep, str);
 					break;
+				case 'f':
+					printf("%f", va_arg(list, double));
+					break;
 
 				default:
 					i++;
