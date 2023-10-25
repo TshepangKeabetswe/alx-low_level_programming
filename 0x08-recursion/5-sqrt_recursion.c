@@ -1,24 +1,32 @@
 #include "main.h"
 /**
- * _evaluate - evaluate function sqrt
- * @i: interger
- * @n: interger
- * Return: evaluate sqrt
+ * _sqrt - finds a square root of a number recursively
+ * @i: counter
+ * @n: the number to find the root of
+ * Return: square root of n
  */
-
-int _evaluate(int i, int n)
+int _sqrt(int i, int n)
 {
-	/*Evaluate function*/
-	if (n == 0 || n == 1)
+	if (i == n)
+		return (-1);
+
+	if (((n / i) * (n / i)) == n)
+		return (i);
+	return (_sqrt(++i, n));
+}
+/**
+ * _sqrt_recursion - finds sqruare root using _sqrt
+ * @n: the number to find root of
+ * Return: square root of n
+ */
+int _sqrt_recursion(int n)
+{
+	int i = 1;
+
+	if (n == 1 || n == 0)
 		return (n);
+	if (n < 0)
+		return (-1);
 
-	else if (i * i < n)
-		return (_evaluate(i + 1, n));
-
-	else if (i * i == n) /*condiction base*/
-	return (i);
-
-	return (-1);
-
-	return (-1);
+	return (_sqrt(i, n));
 }
