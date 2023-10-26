@@ -1,20 +1,21 @@
 #include <stdio.h>
 /**
- * main - a program that prints numbers
- * Return: 0 success
- */
+ * main - entry point
+ * Description: Prints number
+ * Return: Always 0
+*/
 int main(void)
 {
-	int b;
+	int my_var = 48;
 
-	for (b = 0; b < 10; b++)
+	while (my_var <= 57)
 	{
-		putchar(b + '0');
-	if (b != 9)
-	{
+		putchar(my_var);
+		if (my_var == 57)
+			break;
 		putchar(',');
-	putchar(' ');
-	}
+		putchar(' ');
+		my_var++;
 	}
 	putchar('\n');
 	return (0);
